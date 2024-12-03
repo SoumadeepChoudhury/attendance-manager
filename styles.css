@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    font-size: 14px;
+    margin: 5px 0;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#startAttendance {
+    background: #4caf50;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.present {
+    background: #4caf50;
+    color: white;
+}
+
+.absent {
+    background: #f44336;
+    color: white;
+}
+
+/* Style for roll numbers in a grid layout */
+#presentList {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap roll numbers to the next row if necessary */
+    gap: 10px;
+    /* Spacing between roll numbers */
+    justify-content: center;
+    /* Center align the roll numbers */
+    margin: 10px 0;
+}
+
+#presentList span {
+    background: #e7f3ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
